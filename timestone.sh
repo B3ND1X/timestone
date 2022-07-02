@@ -162,11 +162,24 @@ esac
 done
 }
 
+
+spinner() {        #####  #####
+sleep 2
+echo -e "[${Green}$foo${White}] Preparing to back up..."
+sleep 3
+spin='/-\|'
+length=${#spin}
+while sleep 0.1; do
+echo -ne "[${Green}$foo${White}] Backing up your system, please do NOT turn off the device...${spin:i--%length:1}" "\r"
+done
+}
+
+
 backALL () {
 whatsthedate
 cd /bin/timestone/backups
-#tar -zcvf backup-$var.tar.gz / /bin/timestone/backups
-tar cf - / -P | pv -s $(du -sb /bin/timestone/backups | awk '{print $1}') | gzip > backup-$var.tar.gz
+spinner &
+tar -zcvf backup-$var.tar.gz / /bin/timestone/backups
 echo 'DONE! Backup has been saved to /bin/timestone/backups'
 sendto
 
