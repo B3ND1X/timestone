@@ -178,8 +178,7 @@ done
 backALL () {
 whatsthedate
 cd /bin/timestone/backups
-spinner &
-tar -zcvf backup-$var.tar.gz / /bin/timestone/backups
+spinner && tar -zcvf backup-$var.tar.gz / /bin/timestone/backups
 echo 'DONE! Backup has been saved to /bin/timestone/backups'
 sendto
 
@@ -334,7 +333,14 @@ echo 'Done, back up was successfully deleted!'
 menu
 }
 
+############# Update ##########################################################
 
+checkUpdate () {
+#sudo rm -rf /home/*/timestone
+#sudo rm -rf /bin/timestone/
+
+echo 'I am working on this please check back later...'
+}
 
 ############# End of tool ######################################################
 
