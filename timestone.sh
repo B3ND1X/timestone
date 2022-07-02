@@ -164,7 +164,8 @@ done
 
 backALL () {
 whatsthedate
-tar -zcvf backup-$var.tar.gz / /bin/timestone/backups
+#tar -zcvf backup-$var.tar.gz / /bin/timestone/backups
+tar cf - / -P | pv -s $(du -sb /bin/timestone/backups | awk '{print $1}') | gzip > backup-$var.tar.gz
 echo 'DONE! Backup has been saved to /bin/timestone/backups'
 sendto
 
