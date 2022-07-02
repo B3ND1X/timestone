@@ -20,7 +20,7 @@ chmod +x /bin/timestone/timestone.sh
 chmod +x /bin/timestone/install.sh
 chmod +x /home/*/timestone/timestone.sh
 chmod +x /home/*/timestone/uninstall.sh
-chomd +x /home/*/timestone/restore.sh
+chmod +x /home/*/timestone/restore.sh
 cp /bin/timestone/timestone.service /lib/systemd/system
 sudo systemctl daemon-reload
 apt-get update
