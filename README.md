@@ -3,6 +3,8 @@
 Time Stone is a tool for making and restoring from a back up for your Raspberry Pi, similar to Time Machine for Mac. Back ups can be stored locally or sent to a remote server.  
 
 # Installation/Usage
+
+## CLI (Recomended)
 <pre>
 cd
 </pre>
@@ -17,6 +19,11 @@ sudo chmod +x install.sh
 </pre>
 <pre>
 sudo ./install.sh
+</pre>
+
+## GUI 
+<pre> 
+sudo python3 /timestone/GUI-beta/timestone.py
 </pre>
 
 # How to uninstall
