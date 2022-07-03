@@ -1,0 +1,18 @@
+[Unit]
+Description=Time Stone restore from a backup 
+Before=basic.target
+After=local-fs.target sysinit.target
+DefaultDependencies=no
+
+Wants=network.target
+After=syslog.target network-online.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/timestone/restore.sh
+#Restart=on-failure
+#RestartSec=10
+KillMode=process
+
+[Install]
+WantedBy=basic.target
