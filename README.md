@@ -31,4 +31,10 @@ sudo python3 /timestone/GUI-beta/timestone.py
 sudo ./uninstall.sh
 </pre>
 
+# Screenshots
+
+![57D66A30-4CF0-499D-A9A7-40EA03EECDB6](https://user-images.githubusercontent.com/48177481/177047358-9d6178e6-0601-46e6-bbb8-ca76a790716b.jpeg)
+![21FB17F2-9871-4EFF-A044-329BFAFF5253](https://user-images.githubusercontent.com/48177481/177047359-88d84e9c-57a4-4482-9a03-9184132a0a89.jpeg)
+![F81B532E-6B0D-4BD7-A2F3-7D5DA4DD9330](https://user-images.githubusercontent.com/48177481/177047360-5ba77aae-412c-48f9-82e0-7659e26dc87e.jpeg)
+
 # PLEASE NOTE: Time Stone has not been tested, please check back later! Use at your own risk!
