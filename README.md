@@ -4,7 +4,7 @@ Time Stone is a tool for making and restoring from a back up for your Raspberry 
 
 # Installation/Usage
 
-## CLI (Recomended)
+## CLI (Recommended)
 <pre>
 cd
 </pre>
