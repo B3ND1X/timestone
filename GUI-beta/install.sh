@@ -1,4 +1,5 @@
 zenity --info --text="Installing software please wait!"
+pip install pywebview > /dev/null
 mkdir /bin/timestone/ > /dev/null
 mkdir /bin/timestone/backups > /dev/null
 mkdir /bin/timestone/tmp > /dev/null
