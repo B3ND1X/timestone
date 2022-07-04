@@ -126,7 +126,7 @@ whatsmyname () {
 whatsthedate () {
 	sleep 1
 	date
-date +"%FORMAT"
+date +"%m-%d-%Y"
 var=$(date)
 var=`date`
 echo "$var"
