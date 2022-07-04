@@ -178,7 +178,9 @@ done
 backALL () {
 whatsthedate
 cd /bin/timestone/backups
-spinner && tar -zcvf backup-$var.tar.gz / /bin/timestone/backups
+spinner &
+echo 'Making a back up... This could take some time, please wait...' 
+tar -zcvf backup-$var.tar.gz / /bin/timestone/backups
 echo 'DONE! Backup has been saved to /bin/timestone/backups'
 sendto
 
